@@ -15,6 +15,7 @@
 #include "ft_strrchr.c"
 #include "ft_strstr.c"
 #include "ft_strcmp.c"
+#include "ft_strncmp.c"
 
 void		*ft_memset(void *b, int c, size_t len);
 void		ft_bzero(void *s, size_t n);
@@ -31,4 +32,5 @@ char		*ft_strchr(const char *s, int c);
 char		*ft_strrchr(const char *s, int c);
 char		*ft_strstr(const char *haystack, const char *needle);
 int			ft_strcmp(const char *s1, const char *s2);
+int			ft_strncmp(const char *s1, const char *s2, size_t n);
 #endif

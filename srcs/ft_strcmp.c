@@ -1,6 +1,6 @@
 #include "libft.h"
 
-int	check_diff(int diff)
+static int	check_diff(int diff)
 {
 		if (diff > 0)
 			return (1);
@@ -9,7 +9,7 @@ int	check_diff(int diff)
 		return (0);
 }
 
-int	ft_strcmp(const char *s1, const char *s2)
+int					ft_strcmp(const char *s1, const char *s2)
 {
 	int	diff;
 
