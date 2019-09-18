@@ -11,4 +11,5 @@ void		*ft_memccpy(void *dst, void *src, int c, size_t n);
 size_t	ft_strlen(const char *s);
 char		*ft_strdup(const char *s1);
 char		*ft_strcpy(char *dst, const char *src);
+char		*ft_strncpy(char *dst, const char *src, size_t len);
 #endif
