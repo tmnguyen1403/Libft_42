@@ -1,5 +1,4 @@
 #include	"libft.h"
-#include	"strlen.c"
 
 char		*ft_strdup(const char *s1)
 {
