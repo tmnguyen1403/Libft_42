@@ -10,10 +10,7 @@ char		*ft_strncpy(char *dst, const char *src, size_t len)
 		dst[counter] = src[counter];
 		++counter;
 	}
-	while (counter < len)
-	{
-		dst[counter] = '\0';
-		++counter;
-	}
+	dst[counter] = '\0';
+	
 	return (dst);
 }
