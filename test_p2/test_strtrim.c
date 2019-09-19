@@ -4,8 +4,12 @@ char		*(*f)(char const *);
 
 void test_s(char *s, char *expect)
 {
+	char *t;
+	t = f(s);
 	printf("Test %s, expect(%s)\n", s, expect);
-	printf("result: %s\n", f(s));
+	printf("result: %s\n", t);
+	if (t != 0)
+		free(t);
 }
 
 void test()

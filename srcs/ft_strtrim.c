@@ -27,6 +27,8 @@ static unsigned int trim_space_end(char const *s)
 	size_t				length;
 
 	length = ft_strlen(s);
+	if (length == 0)
+		return (0);
 	index = length - 1;
 	while (s[index])
 	{
@@ -45,8 +47,10 @@ char		*ft_strtrim(char const *s)
 
 	if (s == 0)
 		return (0);
-	if (*s == 0)
-		return ((char *)s);
+	if (*s == '\0')
+	{
+		return ((char *)ft_memalloc(1));
+	}
 	start = trim_space_front(s);
 	end = trim_space_end(s);
 	l_trim = end - start + 1;
