@@ -10,11 +10,16 @@ char		*ft_strstr(const char *haystack, const char *needle)
 		if (l_needle == 0)
 			return ((char *)haystack);
 		first = (char *)haystack;
-		diff = 1;
-		while (first && diff != 0)
+		while (first)
 		{
 			first = ft_strchr(first, needle[0]);
-			diff = ft_strncmp((const char *)first, needle, l_needle);
+			if (first)
+			{
+				diff = ft_strncmp((const char *)first, needle, l_needle);
+				if (diff == 0)
+					return (first);
+				first = first + 1;
+			}
 		}
-		return (first);
+		return (0);
 }
