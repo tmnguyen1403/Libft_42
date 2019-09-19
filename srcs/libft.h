@@ -32,6 +32,7 @@
 #include "ft_memcmp.c"
 #include "ft_memalloc.c"
 #include "ft_memdel.c"
+#include "ft_strnew.c"
 
 void		*ft_memset(void *b, int c, size_t len);
 void		ft_bzero(void *s, size_t n);
