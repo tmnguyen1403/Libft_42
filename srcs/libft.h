@@ -2,6 +2,7 @@
 # define FT_LIBFT_H
 # include <string.h>
 # include <stdio.h>
+# include <ctype.h>
 # include <stdlib.h>
 
 #include "ft_strlen.c"
@@ -17,6 +18,8 @@
 #include "ft_strncmp.c"
 #include "ft_strstr.c"
 #include "ft_strnstr.c"
+#include "ft_isalpha.c"
+#include "ft_atoi.c"
 
 void		*ft_memset(void *b, int c, size_t len);
 void		ft_bzero(void *s, size_t n);
@@ -35,4 +38,6 @@ int			ft_strcmp(const char *s1, const char *s2);
 int			ft_strncmp(const char *s1, const char *s2, size_t n);
 char		*ft_strstr(const char *haystack, const char *needle);
 char		*ft_strnstr(const char *haystack, const char *needle, size_t len);
+int			ft_isalpha(int c);
+int			ft_atoi(const char *str);
 #endif
