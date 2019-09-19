@@ -38,6 +38,7 @@
 #include "ft_striteri.c"
 #include "ft_strmap.c"
 #include "ft_strmapi.c"
+#include "ft_strequ.c"
 
 void		*ft_memset(void *b, int c, size_t len);
 void		ft_bzero(void *s, size_t n);
@@ -76,4 +77,6 @@ void		ft_striter(char *s, void (*f)(char *));
 void		ft_striteri(char *s, void (*f)(unsigned int, char *));
 char		*ft_strmap(char const *s, char (*f)(char));
 char		*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+int			ft_strequ(char const *s1, char const *s2);
+
 #endif
