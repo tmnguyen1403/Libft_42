@@ -22,6 +22,7 @@
 #include "ft_isdigit.c"
 #include "ft_isalnum.c"
 #include "ft_isascii.c"
+#include "ft_isprint.c"
 #include "ft_atoi.c"
 
 void		*ft_memset(void *b, int c, size_t len);
@@ -45,6 +46,7 @@ int			ft_isalpha(int c);
 int			ft_isdigit(int c);
 int			ft_isalnum(int c);
 int			ft_isascii(int c);
+int			ft_isprint(int c);
 int			ft_atoi(const char *str);
 
 #endif
