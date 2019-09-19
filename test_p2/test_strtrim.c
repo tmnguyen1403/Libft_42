@@ -38,8 +38,6 @@ void test()
 	test_s(s, expect);
 }
 
-
-
 int main(void)
 {
 	f = &ft_strtrim;

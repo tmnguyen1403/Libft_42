@@ -30,6 +30,7 @@
 #include "ft_memmove.c"
 #include "ft_memchr.c"
 #include "ft_memcmp.c"
+#include "ft_memset.c"
 #include "ft_memalloc.c"
 #include "ft_memdel.c"
 #include "ft_strnew.c"
