@@ -34,7 +34,7 @@
 #include "ft_memdel.c"
 #include "ft_strnew.c"
 #include "ft_strdel.c"
-#include "ft_strclr.c"
+#include "ft_striter.c"
 
 void		*ft_memset(void *b, int c, size_t len);
 void		ft_bzero(void *s, size_t n);
@@ -69,4 +69,5 @@ void		ft_memdel(void **ap);
 char		*ft_strnew(size_t size);
 void		ft_strdel(char **as);
 void		ft_strclr(char *s);
+void		ft_striter(char *s, void (*f)(char *));
 #endif
