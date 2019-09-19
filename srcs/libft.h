@@ -30,6 +30,7 @@
 #include "ft_memmove.c"
 #include "ft_memchr.c"
 #include "ft_memcmp.c"
+#include "ft_memalloc.c"
 
 void		*ft_memset(void *b, int c, size_t len);
 void		ft_bzero(void *s, size_t n);
@@ -59,5 +60,5 @@ int			ft_isprint(int c);
 int			ft_toupper(int c);
 int			ft_tolower(int c);
 int			ft_atoi(const char *str);
-
+void		*ft_memalloc(size_t size);
 #endif
