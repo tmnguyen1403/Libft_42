@@ -5,6 +5,7 @@
 # include <ctype.h>
 # include <stdlib.h>
 
+#include "ft_memcpy.c"
 #include "ft_strlen.c"
 #include "ft_strdup.c"
 #include "ft_strcpy.c"
@@ -26,11 +27,13 @@
 #include "ft_toupper.c"
 #include "ft_tolower.c"
 #include "ft_atoi.c"
+#include "ft_memmove.c"
 
 void		*ft_memset(void *b, int c, size_t len);
 void		ft_bzero(void *s, size_t n);
 void		*ft_memcpy(void *dst, void *src, size_t n);
 void		*ft_memccpy(void *dst, void *src, int c, size_t n);
+void		*ft_memmove(void *dst, const void *src, size_t len);
 size_t	ft_strlen(const char *s);
 char		*ft_strdup(const char *s1);
 char		*ft_strcpy(char *dst, const char *src);
