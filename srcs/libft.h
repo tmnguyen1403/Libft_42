@@ -19,6 +19,7 @@
 #include "ft_strstr.c"
 #include "ft_strnstr.c"
 #include "ft_isalpha.c"
+#include "ft_isdigit.c"
 #include "ft_atoi.c"
 
 void		*ft_memset(void *b, int c, size_t len);
@@ -40,4 +41,5 @@ char		*ft_strstr(const char *haystack, const char *needle);
 char		*ft_strnstr(const char *haystack, const char *needle, size_t len);
 int			ft_isalpha(int c);
 int			ft_atoi(const char *str);
+int			ft_isdigit(int c);
 #endif
