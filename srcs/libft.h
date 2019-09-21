@@ -49,6 +49,7 @@
 #include "ft_putstr.c"
 #include "ft_putendl.c"
 #include "ft_itoa.c"
+#include "ft_putnbr.c"
 
 void		*ft_memset(void *b, int c, size_t len);
 void		ft_bzero(void *s, size_t n);
@@ -96,4 +97,5 @@ void		ft_putchar(char c);
 void		ft_putstr(char const *s);
 void		ft_putendl(char const *s);
 char		*ft_itoa(int n);
+void		ft_putnbr(int n);
 #endif
