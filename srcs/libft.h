@@ -5,6 +5,7 @@
 # include <ctype.h>
 # include <stdlib.h>
 # include <unistd.h>
+# include <fcntl.h>
 
 #include "ft_memcpy.c"
 #include "ft_strlen.c"
@@ -50,6 +51,7 @@
 #include "ft_putendl.c"
 #include "ft_itoa.c"
 #include "ft_putnbr.c"
+#include "ft_putchar_fd.c"
 
 void		*ft_memset(void *b, int c, size_t len);
 void		ft_bzero(void *s, size_t n);
@@ -98,4 +100,5 @@ void		ft_putstr(char const *s);
 void		ft_putendl(char const *s);
 char		*ft_itoa(int n);
 void		ft_putnbr(int n);
+void		ft_putchar_fd(char c, int fd);
 #endif
