@@ -1,9 +1,8 @@
 #include "libft.h"
 
-static void cpn_rev(char *dst, const char *src, size_t n)
+static void		cpn_rev(char *dst, const char *src, size_t n)
 {
 	size_t index;
-
 
 	index = 0;
 	while (n > 0)
@@ -16,7 +15,7 @@ static void cpn_rev(char *dst, const char *src, size_t n)
 	dst[index + 1] = '\0';
 }
 
-static char *ft_zero()
+static char		*ft_zero()
 {
 	char *result;
 
@@ -28,12 +27,12 @@ static char *ft_zero()
 	return (result);
 }
 
-static int	ft_abs(int n)
+static int		ft_abs(int n)
 {
 	return (n < 0 ? n * -1 : n);
 }
 
-char				*ft_itoa(int n)
+char					*ft_itoa(int n)
 {
 	char		s[14];
 	char		*result;
