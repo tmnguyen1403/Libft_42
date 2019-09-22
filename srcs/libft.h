@@ -68,6 +68,7 @@ typedef struct	s_list
 #include "ft_lstdelone.c"
 #include "ft_lstdel.c"
 #include "ft_lstadd.c"
+#include "ft_lstiter.c"
 
 void		*ft_memset(void *b, int c, size_t len);
 void		ft_bzero(void *s, size_t n);
@@ -125,4 +126,5 @@ t_list	*ft_lstnew(void const *content, size_t content_size);
 void		ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
 void		ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void		ft_lstadd(t_list **alst, t_list *new);
+void		ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 #endif
