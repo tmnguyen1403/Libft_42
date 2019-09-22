@@ -46,6 +46,7 @@
 #include "ft_strsub.c"
 #include "ft_strjoin.c"
 #include "ft_strtrim.c"
+#include "ft_strsplit.c"
 #include "ft_putchar.c"
 #include "ft_putstr.c"
 #include "ft_putendl.c"
@@ -55,6 +56,7 @@
 #include "ft_putstr_fd.c"
 #include "ft_putendl_fd.c"
 #include "ft_putnbr_fd.c"
+
 
 void		*ft_memset(void *b, int c, size_t len);
 void		ft_bzero(void *s, size_t n);
@@ -98,6 +100,7 @@ int			ft_strnequ(char const *s1, char const *s2, size_t n);
 char		*ft_strsub(char const *s, unsigned int start, size_t len);
 char		*ft_strjoin(char const *s1, char const *s2);
 char		*ft_strtrim(char const *s);
+char		**ft_strsplit(char const *s, char c);
 void		ft_putchar(char c);
 void		ft_putstr(char const *s);
 void		ft_putendl(char const *s);

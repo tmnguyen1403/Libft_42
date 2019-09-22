@@ -1,15 +1,4 @@
 #include "libft.h"
-// The strlcpy() and strlcat() functions copy and concatenate strings with
-//      the same input parameters and output result as snprintf(3).  They are
-//      designed to be safer, more consistent, and less error prone replacements
-//      for the easily misused functions strncpy(3) and strncat(3).
-// strlcpy() and strlcat() take the full size of the destination buffer and
-// 		      guarantee NUL-termination if there is room.  Note that room for the NUL
-// 		      should be included in dstsize.
-//
-// strlcat() functions return the total
-// 		length of the string they tried to create.that means the initial length of dst plus
-// 		the length of src.
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
