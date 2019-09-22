@@ -9,6 +9,8 @@ void		ft_lstdelone(t_list **alst, void (*del)(void *, size_t))
 {
 	t_list	*tmp;
 
+	if (*alst == 0)
+		return ;
 	tmp = *alst;
 	del(tmp->content, tmp->content_size);
 	free(tmp);
