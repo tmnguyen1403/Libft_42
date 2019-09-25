@@ -32,7 +32,7 @@ static unsigned int trim_space_end(char const *s)
 	index = length - 1;
 	while (s[index])
 	{
-		if (!is_space(s[index]))
+		if (!is_spaces(s[index]))
 			break ;
 		--index;
 	}
