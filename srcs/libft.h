@@ -2,60 +2,8 @@
 # define FT_LIBFT_H
 # include <string.h>
 # include <stdio.h>
-# include <ctype.h>
 # include <stdlib.h>
 # include <unistd.h>
-# include <fcntl.h>
-
-#include "ft_memcpy.c"
-#include "ft_strlen.c"
-#include "ft_strdup.c"
-#include "ft_strcpy.c"
-#include "ft_strncpy.c"
-#include "ft_strcat.c"
-#include "ft_strncat.c"
-#include "ft_strlcat.c"
-#include "ft_strchr.c"
-#include "ft_strrchr.c"
-#include "ft_strcmp.c"
-#include "ft_strncmp.c"
-#include "ft_strstr.c"
-#include "ft_strnstr.c"
-#include "ft_isalpha.c"
-#include "ft_isdigit.c"
-#include "ft_isalnum.c"
-#include "ft_isascii.c"
-#include "ft_isprint.c"
-#include "ft_toupper.c"
-#include "ft_tolower.c"
-#include "ft_atoi.c"
-#include "ft_memmove.c"
-#include "ft_memchr.c"
-#include "ft_memcmp.c"
-#include "ft_memset.c"
-#include "ft_memalloc.c"
-#include "ft_memdel.c"
-#include "ft_strnew.c"
-#include "ft_strdel.c"
-#include "ft_striter.c"
-#include "ft_striteri.c"
-#include "ft_strmap.c"
-#include "ft_strmapi.c"
-#include "ft_strequ.c"
-#include "ft_strnequ.c"
-#include "ft_strsub.c"
-#include "ft_strjoin.c"
-#include "ft_strtrim.c"
-#include "ft_strsplit.c"
-#include "ft_putchar.c"
-#include "ft_putstr.c"
-#include "ft_putendl.c"
-#include "ft_itoa.c"
-#include "ft_putnbr.c"
-#include "ft_putchar_fd.c"
-#include "ft_putstr_fd.c"
-#include "ft_putendl_fd.c"
-#include "ft_putnbr_fd.c"
 
 
 typedef struct	s_list
@@ -64,12 +12,6 @@ typedef struct	s_list
 	size_t					content_size;
 	struct s_list		*next;
 }								t_list;
-#include "ft_lstnew.c"
-#include "ft_lstdelone.c"
-#include "ft_lstdel.c"
-#include "ft_lstadd.c"
-#include "ft_lstiter.c"
-#include "ft_lstmap.c"
 
 void		*ft_memset(void *b, int c, size_t len);
 void		ft_bzero(void *s, size_t n);
