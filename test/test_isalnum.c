@@ -1,4 +1,3 @@
-#include "../srcs/libft.h"
 
 int main(void)
 {

@@ -1,2 +1,2 @@
 all:
-	gcc -Wall -Wextra -Werror $f
+	gcc -Wall -Wextra -Werror $f -L. -lft
