@@ -1,12 +1,12 @@
 NAME = libft.a
-SRCS = srcs/memset.c srcs/main.c 
-OBJECTS = memset.o main.o
+SRCS = srcs/ft_*.c
+OBJECTS = ft_*.o
 FLAGS = -Wall -Wextra -Werror
 
 all: $(NAME)
 
 $(NAME): $(OBJECTS)
-	gcc $(FLAGS) $(OBJECTS) -o test
+	ar rc $(NAME) $(OBJECTS)
 
 $(OBJECTS):
 	gcc $(FLAGS) -c $(SRCS)
